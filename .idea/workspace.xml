@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="avatar-extension" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ca0a78cf-d859-4a23-b687-f494d7a816f4" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1c3cRqhZGOiebTsAGhVaYRaTHD7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/META-INF" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs.protractor.protractor_package" value="" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/META-INF" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/mai1015/keycloak/avatar/rest" />
+      <recent name="$PROJECT_DIR$/src/main/java" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/mai1015/keycloak/avatar/storage" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Maven.avatar-extension [clean,package]">
+    <configuration name="JBoss 19.1.0.Final" type="JBossConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="JBoss 19.1.0.Final" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER" value="false" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="avatar-extension">
+          <settings />
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="SERVER" />
+        <option name="BINDING_SET_NAME" value="" />
+        <option name="DOMAIN" value="false" />
+        <option name="SERVER_GROUP" />
+        <option name="USERNAME" value="" />
+        <option name="CREDENTIAL_ALIAS" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="JBoss" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="56647" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="false" />
+      </method>
+    </configuration>
+    <configuration name="avatar-extension [clean,package]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="package" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="JBoss Server.JBoss 19.1.0.Final" />
+      <item itemvalue="Maven.avatar-extension [clean,package]" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ca0a78cf-d859-4a23-b687-f494d7a816f4" name="Default Changelist" comment="" />
+      <created>1589760711530</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589760711530</updated>
+      <workItem from="1589760713203" duration="2048000" />
+      <workItem from="1589763240451" duration="6000" />
+      <workItem from="1589763335539" duration="3647000" />
+      <workItem from="1589808799366" duration="9950000" />
+      <workItem from="1589884909340" duration="25494000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="422" y="310" key="#JBoss_Server" timestamp="1589849486093">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="422" y="310" key="#JBoss_Server/0.23.1280.777@0.23.1280.777" timestamp="1589849486093" />
+    <state x="128" y="23" key="#Project_Structure" timestamp="1589848981198">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="128" y="23" key="#Project_Structure/0.23.1280.777@0.23.1280.777" timestamp="1589848981198" />
+    <state x="532" y="163" key="#Schemas_and_DTDs" timestamp="1589849445323">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="532" y="163" key="#Schemas_and_DTDs/0.23.1280.777@0.23.1280.777" timestamp="1589849445323" />
+    <state x="104" y="73" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589926383692">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="104" y="73" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1280.777@0.23.1280.777" timestamp="1589926383692" />
+    <state x="453" y="125" key="#com.intellij.ide.util.MemberChooser" timestamp="1589947878005">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="453" y="125" key="#com.intellij.ide.util.MemberChooser/0.23.1280.777@0.23.1280.777" timestamp="1589947878005" />
+    <state x="359" y="23" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1589849489245">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="359" y="23" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.23.1280.777@0.23.1280.777" timestamp="1589849489245" />
+    <state x="100" y="123" width="1080" height="577" key="DiffContextDialog" timestamp="1589914641824">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="100" y="123" width="1080" height="577" key="DiffContextDialog/0.23.1280.777@0.23.1280.777" timestamp="1589914641824" />
+    <state width="1238" height="284" key="GridCell.Tab.0.bottom" timestamp="1589947482090">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="1238" height="284" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1589947482090" />
+    <state width="1238" height="284" key="GridCell.Tab.0.center" timestamp="1589947482089">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="1238" height="284" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1589947482089" />
+    <state width="1238" height="284" key="GridCell.Tab.0.left" timestamp="1589947482088">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="1238" height="284" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1589947482088" />
+    <state width="1238" height="284" key="GridCell.Tab.0.right" timestamp="1589947482089">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="1238" height="284" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1589947482089" />
+    <state width="1238" height="171" key="GridCell.Tab.1.bottom" timestamp="1589945263456">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="1238" height="171" key="GridCell.Tab.1.bottom/0.23.1280.777@0.23.1280.777" timestamp="1589945263456" />
+    <state width="1238" height="171" key="GridCell.Tab.1.center" timestamp="1589945263456">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="1238" height="171" key="GridCell.Tab.1.center/0.23.1280.777@0.23.1280.777" timestamp="1589945263456" />
+    <state width="1238" height="171" key="GridCell.Tab.1.left" timestamp="1589945263455">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="1238" height="171" key="GridCell.Tab.1.left/0.23.1280.777@0.23.1280.777" timestamp="1589945263455" />
+    <state width="1238" height="171" key="GridCell.Tab.1.right" timestamp="1589945263456">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="1238" height="171" key="GridCell.Tab.1.right/0.23.1280.777@0.23.1280.777" timestamp="1589945263456" />
+    <state x="141" y="23" key="SettingsEditor" timestamp="1589849370429">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="141" y="23" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1589849370429" />
+    <state x="8" y="74" key="new project wizard" timestamp="1589763176780">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="8" y="74" key="new project wizard/0.23.1280.777@0.23.1280.777" timestamp="1589763176780" />
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1589933362707">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.23.1280.777@0.23.1280.777" timestamp="1589933362707" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/mai1015/keycloak/avatar/storage/minio/MinioAvatarStorageProvider.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/keycloak/keycloak-services/10.0.1/keycloak-services-10.0.1-sources.jar!/org/keycloak/headers/DefaultSecurityHeadersProvider.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

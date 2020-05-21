@@ -6,7 +6,16 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca0a78cf-d859-4a23-b687-f494d7a816f4" name="Default Changelist" comment="" />
+    <list default="true" id="ca0a78cf-d859-4a23-b687-f494d7a816f4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mai1015/keycloak/avatar/rest/AvatarResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mai1015/keycloak/avatar/rest/AvatarResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/jboss-deployment-structure.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/jboss-deployment-structure.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/theme/account-avatar/account/account.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/theme/account-avatar/account/account.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/theme/account-avatar/account/theme.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/theme/account-avatar/account/theme.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/theme/account-avatar/admin/resources/js/user-avatar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/theme/account-avatar/admin/resources/js/user-avatar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/theme/account-avatar/admin/resources/partials/user-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/theme/account-avatar/admin/resources/partials/user-detail.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,7 +35,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1c3cRqhZGOiebTsAGhVaYRaTHD7" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -35,6 +44,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="GO_FMT" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -179,8 +189,18 @@
       <workItem from="1589763240451" duration="6000" />
       <workItem from="1589763335539" duration="3647000" />
       <workItem from="1589808799366" duration="9950000" />
-      <workItem from="1589884909340" duration="25494000" />
+      <workItem from="1589884909340" duration="25735000" />
+      <workItem from="1589960126307" duration="193000" />
+      <workItem from="1589994789945" duration="5402000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial Commit">
+      <created>1589948568683</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1589948568683</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,6 +210,9 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
+    <MESSAGE value="Initial Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="422" y="310" key="#JBoss_Server" timestamp="1589849486093">
@@ -216,42 +239,50 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="359" y="23" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.23.1280.777@0.23.1280.777" timestamp="1589849489245" />
+    <state x="143" y="23" key="CommitChangelistDialog2" timestamp="1589948568341">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="143" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1589948568341" />
+    <state width="977" height="494" key="DebuggerActiveHint" timestamp="1590005367918">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="977" height="494" key="DebuggerActiveHint/0.23.1280.777@0.23.1280.777" timestamp="1590005367918" />
     <state x="100" y="123" width="1080" height="577" key="DiffContextDialog" timestamp="1589914641824">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="100" y="123" width="1080" height="577" key="DiffContextDialog/0.23.1280.777@0.23.1280.777" timestamp="1589914641824" />
-    <state width="1238" height="284" key="GridCell.Tab.0.bottom" timestamp="1589947482090">
+    <state width="1238" height="284" key="GridCell.Tab.0.bottom" timestamp="1590046115615">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1238" height="284" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1589947482090" />
-    <state width="1238" height="284" key="GridCell.Tab.0.center" timestamp="1589947482089">
+    <state width="1238" height="284" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1590046115615" />
+    <state width="1238" height="284" key="GridCell.Tab.0.center" timestamp="1590046115614">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1238" height="284" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1589947482089" />
-    <state width="1238" height="284" key="GridCell.Tab.0.left" timestamp="1589947482088">
+    <state width="1238" height="284" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1590046115614" />
+    <state width="1238" height="284" key="GridCell.Tab.0.left" timestamp="1590046115613">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1238" height="284" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1589947482088" />
-    <state width="1238" height="284" key="GridCell.Tab.0.right" timestamp="1589947482089">
+    <state width="1238" height="284" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1590046115613" />
+    <state width="1238" height="284" key="GridCell.Tab.0.right" timestamp="1590046115614">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1238" height="284" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1589947482089" />
-    <state width="1238" height="171" key="GridCell.Tab.1.bottom" timestamp="1589945263456">
+    <state width="1238" height="284" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1590046115614" />
+    <state width="1238" height="171" key="GridCell.Tab.1.bottom" timestamp="1590013970819">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1238" height="171" key="GridCell.Tab.1.bottom/0.23.1280.777@0.23.1280.777" timestamp="1589945263456" />
-    <state width="1238" height="171" key="GridCell.Tab.1.center" timestamp="1589945263456">
+    <state width="1238" height="171" key="GridCell.Tab.1.bottom/0.23.1280.777@0.23.1280.777" timestamp="1590013970819" />
+    <state width="1238" height="171" key="GridCell.Tab.1.center" timestamp="1590013970818">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1238" height="171" key="GridCell.Tab.1.center/0.23.1280.777@0.23.1280.777" timestamp="1589945263456" />
-    <state width="1238" height="171" key="GridCell.Tab.1.left" timestamp="1589945263455">
+    <state width="1238" height="171" key="GridCell.Tab.1.center/0.23.1280.777@0.23.1280.777" timestamp="1590013970818" />
+    <state width="1238" height="171" key="GridCell.Tab.1.left" timestamp="1590013970818">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1238" height="171" key="GridCell.Tab.1.left/0.23.1280.777@0.23.1280.777" timestamp="1589945263455" />
-    <state width="1238" height="171" key="GridCell.Tab.1.right" timestamp="1589945263456">
+    <state width="1238" height="171" key="GridCell.Tab.1.left/0.23.1280.777@0.23.1280.777" timestamp="1590013970818" />
+    <state width="1238" height="171" key="GridCell.Tab.1.right" timestamp="1590013970819">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1238" height="171" key="GridCell.Tab.1.right/0.23.1280.777@0.23.1280.777" timestamp="1589945263456" />
+    <state width="1238" height="171" key="GridCell.Tab.1.right/0.23.1280.777@0.23.1280.777" timestamp="1590013970819" />
     <state x="141" y="23" key="SettingsEditor" timestamp="1589849370429">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -269,14 +300,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mai1015/keycloak/avatar/storage/minio/MinioAvatarStorageProvider.java</url>
-          <line>48</line>
-          <option name="timeStamp" value="27" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/mai1015/keycloak/avatar/rest/AvatarResource.java</url>
+          <line>101</line>
+          <option name="timeStamp" value="39" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/keycloak/keycloak-services/10.0.1/keycloak-services-10.0.1-sources.jar!/org/keycloak/headers/DefaultSecurityHeadersProvider.java</url>
-          <line>66</line>
-          <option name="timeStamp" value="29" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/mai1015/keycloak/avatar/rest/AvatarResource.java</url>
+          <line>144</line>
+          <option name="timeStamp" value="41" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

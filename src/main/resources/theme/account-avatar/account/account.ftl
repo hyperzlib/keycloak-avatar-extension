@@ -73,11 +73,21 @@
         </div>
     </div>
 
-    <#assign avatarUrl = url.accountUrl?replace("^(.*)(/account/?)(\\?(.*))?$", "$1/avatar-provider/?account&$4", 'r') />
-    <form action="${avatarUrl}" class="form-horizontal" method="post" enctype="multipart/form-data">
+    <#assign avatarUrl = url.accountUrl?replace("^(.*)(/account/?)(\\?(.*))?$", "$1/avatar-provider", 'r') />
+    <form action="${avatarUrl}" id="avatarForm" class="form-horizontal" method="post" enctype="multipart/form-data">
 
-        <img src="${avatarUrl}" style="max-width:200px;" >
-        <input type="file" id="avatar" name="image">
+        <img id="avatar-preview" src="${avatarUrl}" style="max-width:200px;" >
+        
+        <div class="form-group">
+            <div class="col-sm-2 col-md-2">
+                <label for="lastName" class="control-label">${msg("avatar")}</label>
+            </div>
+
+            <div class="col-sm-10 col-md-10">
+                <input type="file" id="avatar" name="org-image">
+            </div>
+        </div>
+        <div id="avatar-crop" style="display: none;"></div>
 
         <input type="hidden" name="stateChecker" value="${stateChecker}">
 
@@ -89,5 +99,41 @@
             </div>
         </div>
     </form>
+    <script>
+    (function() {
+        var avatar = document.getElementById('avatar-crop');
+        var avatarCrop = new Croppie(avatar, {viewport: {width: 100, height: 100, type: 'square'}, boundary: {width: 300, height: 300}});
+        var form = document.getElementById("avatarForm");
+        function readFile(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    avatar.style.display = "block";
+                    avatarCrop.bind({
+                        url: e.target.result
+                    })
+                    
+                }
+                reader.readAsDataURL(input.files[0]);
+            }
+            else {
+                swal("Sorry - you're browser doesn't support the FileReader API");
+            }
+        }
+        document.getElementById("avatar").onchange = function(e){readFile(this);};
+        form.onsubmit = async function(e){
+            e.preventDefault();
+            var data = new FormData(this);
+            var img = await avatarCrop.result({type: 'blob', size: {width: 500, height: 500}});
+            data.append("image", img, "avatar.png");
+            let response = await fetch('${avatarUrl}', {
+                method: 'POST',
+                body: data
+            });
+            window.location.reload(false); 
+            return false;
+        };
+    })();
+    </script>
 
 </@layout.mainLayout>

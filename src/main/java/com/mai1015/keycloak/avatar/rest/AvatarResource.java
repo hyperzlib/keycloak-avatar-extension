@@ -125,7 +125,7 @@ public class AvatarResource {
         } else {
             try {
                 InputStream stream = getAvatarStorageProvider().loadAvatarImage(session.getContext().getRealm().getName(), userId);
-                return Response.ok(stream).build();
+                return Response.ok(stream).type("image/png").build();
             } catch (Exception e) {e.printStackTrace();}
         }
         return Response.status(404).build();

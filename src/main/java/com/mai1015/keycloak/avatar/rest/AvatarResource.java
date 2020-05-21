@@ -29,6 +29,7 @@ import java.io.InputStream;
 import java.net.URI;
 import java.util.Objects;
 
+@Path("/avatar-provider")
 public class AvatarResource {
     private static final Logger logger = Logger.getLogger(AvatarResource.class);
 
@@ -97,6 +98,13 @@ public class AvatarResource {
 //        }
 //    }
 
+    private URI getAvatarUrl(String realmId, String userId) {
+        return session.getContext().getUri().getBaseUriBuilder()
+                .path(RealmsResource.class).path("{realm}")
+                .path(AvatarResource.class)
+                .path(AvatarResource.class, "getUserAvatar").build(realmId, userId);
+    }
+
     private static ByteArrayInputStream convertImage(InputStream inputStream) {
         try {
             BufferedImage bufferedImage = ImageIO.read(inputStream);
@@ -150,10 +158,11 @@ public class AvatarResource {
             String realmName = session.getContext().getRealm().getName();
 
             getAvatarStorageProvider().saveAvatarImage(realmName, userId, byteArrayIn);
-            auth.getUser().setSingleAttribute("has_avatar", "true");
+            user.setSingleAttribute("has_avatar", "true");
+            user.setSingleAttribute("avatar", getAvatarUrl(realmName, userId).toString());
             return Response.ok().type(MediaType.APPLICATION_JSON).build();
         } catch (Exception ex) {
-            return Response.serverError().build();
+            return Response.serverError().type(MediaType.APPLICATION_JSON).build();
         }
     }
 
@@ -170,9 +179,10 @@ public class AvatarResource {
         String realmName = session.getContext().getRealm().getName();
         if (getAvatarStorageProvider().removeAvatar(realmName, userId)) {
             user.setSingleAttribute("has_avatar", "false");
+            user.removeAttribute("avatar");
             return Response.ok().type(MediaType.APPLICATION_JSON).build();
         }
-        return Response.serverError().build();
+        return Response.serverError().type(MediaType.APPLICATION_JSON).build();
     }
 
     @GET
@@ -203,6 +213,7 @@ public class AvatarResource {
 
             getAvatarStorageProvider().saveAvatarImage(realmName, userId, byteArrayIn);
             auth.getUser().setSingleAttribute("has_avatar", "true");
+            auth.getUser().setSingleAttribute("avatar", getAvatarUrl(realmName, userId).toString());
             return Response.seeOther(RealmsResource.accountUrl(session.getContext().getUri().getBaseUriBuilder()).build(realmName)).build();
         } catch (Exception ex) {
             return Response.serverError().build();

@@ -9,6 +9,7 @@ import java.io.InputStream;
 import java.net.URI;
 
 public class MinioAvatarStorageProvider implements AvatarStorageProvider {
+    public static final String FILE_EXT = ".png";
 
     private final MinioTemplate minioTemplate;
 
@@ -20,7 +21,7 @@ public class MinioAvatarStorageProvider implements AvatarStorageProvider {
     public boolean hasAvatar(String realmName, String userId) {
         String bucketName = minioTemplate.getBucketName(realmName);
         if (!minioTemplate.hasBucket(bucketName)) return false;
-        return minioTemplate.fileExists(bucketName, userId + ".png");
+        return minioTemplate.fileExists(bucketName, userId + FILE_EXT);
     }
 
     @Override
@@ -32,7 +33,7 @@ public class MinioAvatarStorageProvider implements AvatarStorageProvider {
         minioTemplate.execute(minioClient -> {
             PutObjectOptions options = new PutObjectOptions(input.available(), -1);
             options.setContentType("image/png");
-            minioClient.putObject(bucketName, userId + ".png", input, options);
+            minioClient.putObject(bucketName, userId + FILE_EXT, input, options);
             return null;
         });
     }
@@ -41,14 +42,14 @@ public class MinioAvatarStorageProvider implements AvatarStorageProvider {
     public InputStream loadAvatarImage(String realmName, String userId) {
         String bucketName = minioTemplate.getBucketName(realmName);
 
-        return minioTemplate.execute(minioClient -> minioClient.getObject(bucketName, userId + ".png"));
+        return minioTemplate.execute(minioClient -> minioClient.getObject(bucketName, userId + FILE_EXT));
     }
 
     @Override
     public URI getAvatarURI(String realmName, String userId) {
         String bucketName = minioTemplate.getBucketName(realmName);
         try {
-            String url = minioTemplate.execute(minioClient -> minioClient.getObjectUrl(bucketName, userId + ".png"));
+            String url = minioTemplate.execute(minioClient -> minioClient.getObjectUrl(bucketName, userId + FILE_EXT));
             return new URI(url);
         } catch (Exception e) {
             return null;
@@ -60,7 +61,7 @@ public class MinioAvatarStorageProvider implements AvatarStorageProvider {
         String bucketName = minioTemplate.getBucketName(realmName);
         return minioTemplate.execute(minioClient -> {
             try {
-                minioClient.removeObject(bucketName, userId + ".png");
+                minioClient.removeObject(bucketName, userId + FILE_EXT);
                 return true;
             } catch (Exception e) {
                 return false;

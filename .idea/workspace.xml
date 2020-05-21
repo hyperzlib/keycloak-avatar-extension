@@ -6,9 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca0a78cf-d859-4a23-b687-f494d7a816f4" name="Default Changelist" comment="remove dependency">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="ca0a78cf-d859-4a23-b687-f494d7a816f4" name="Default Changelist" comment="add README.md">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mai1015/keycloak/avatar/rest/AvatarResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mai1015/keycloak/avatar/rest/AvatarResource.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +185,7 @@
       <workItem from="1589808799366" duration="9950000" />
       <workItem from="1589884909340" duration="25735000" />
       <workItem from="1589960126307" duration="193000" />
-      <workItem from="1589994789945" duration="6644000" />
+      <workItem from="1589994789945" duration="7607000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1589948568683</created>
@@ -208,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590046310128</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add README.md">
+      <created>1590047783448</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1590047783448</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,7 +228,8 @@
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="add resource" />
     <MESSAGE value="remove dependency" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove dependency" />
+    <MESSAGE value="add README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="add README.md" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -249,10 +257,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="359" y="23" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.23.1280.777@0.23.1280.777" timestamp="1589849489245" />
-    <state x="143" y="23" key="CommitChangelistDialog2" timestamp="1590046597197">
+    <state x="143" y="23" key="CommitChangelistDialog2" timestamp="1590047791817">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="143" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1590046597197" />
+    <state x="143" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1590047791817" />
     <state width="977" height="494" key="DebuggerActiveHint" timestamp="1590005367918">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -297,10 +305,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="141" y="23" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1589849370429" />
-    <state x="240" y="151" key="Vcs.Push.Dialog.v2" timestamp="1590046656938">
+    <state x="240" y="151" key="Vcs.Push.Dialog.v2" timestamp="1590047798468">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="240" y="151" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1590046656938" />
+    <state x="240" y="151" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1590047798468" />
     <state x="8" y="74" key="new project wizard" timestamp="1589763176780">
       <screen x="0" y="23" width="1280" height="777" />
     </state>

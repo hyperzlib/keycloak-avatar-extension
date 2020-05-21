@@ -6,15 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca0a78cf-d859-4a23-b687-f494d7a816f4" name="Default Changelist" comment="">
+    <list default="true" id="ca0a78cf-d859-4a23-b687-f494d7a816f4" name="Default Changelist" comment="remove dependency">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mai1015/keycloak/avatar/rest/AvatarResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mai1015/keycloak/avatar/rest/AvatarResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/jboss-deployment-structure.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/jboss-deployment-structure.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/theme/account-avatar/account/account.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/theme/account-avatar/account/account.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/theme/account-avatar/account/theme.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/theme/account-avatar/account/theme.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/theme/account-avatar/admin/resources/js/user-avatar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/theme/account-avatar/admin/resources/js/user-avatar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/theme/account-avatar/admin/resources/partials/user-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/theme/account-avatar/admin/resources/partials/user-detail.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,7 +185,7 @@
       <workItem from="1589808799366" duration="9950000" />
       <workItem from="1589884909340" duration="25735000" />
       <workItem from="1589960126307" duration="193000" />
-      <workItem from="1589994789945" duration="5402000" />
+      <workItem from="1589994789945" duration="6644000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1589948568683</created>
@@ -200,7 +194,21 @@
       <option name="project" value="LOCAL" />
       <updated>1589948568683</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add resource">
+      <created>1590046275740</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1590046275740</updated>
+    </task>
+    <task id="LOCAL-00003" summary="remove dependency">
+      <created>1590046310128</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1590046310128</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,7 +219,9 @@
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
     <MESSAGE value="Initial Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
+    <MESSAGE value="add resource" />
+    <MESSAGE value="remove dependency" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove dependency" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -239,10 +249,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="359" y="23" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.23.1280.777@0.23.1280.777" timestamp="1589849489245" />
-    <state x="143" y="23" key="CommitChangelistDialog2" timestamp="1589948568341">
+    <state x="143" y="23" key="CommitChangelistDialog2" timestamp="1590046597197">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="143" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1589948568341" />
+    <state x="143" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1590046597197" />
     <state width="977" height="494" key="DebuggerActiveHint" timestamp="1590005367918">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -251,22 +261,22 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="100" y="123" width="1080" height="577" key="DiffContextDialog/0.23.1280.777@0.23.1280.777" timestamp="1589914641824" />
-    <state width="1238" height="284" key="GridCell.Tab.0.bottom" timestamp="1590046115615">
+    <state width="1238" height="284" key="GridCell.Tab.0.bottom" timestamp="1590046414068">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1238" height="284" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1590046115615" />
-    <state width="1238" height="284" key="GridCell.Tab.0.center" timestamp="1590046115614">
+    <state width="1238" height="284" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1590046414068" />
+    <state width="1238" height="284" key="GridCell.Tab.0.center" timestamp="1590046414068">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1238" height="284" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1590046115614" />
-    <state width="1238" height="284" key="GridCell.Tab.0.left" timestamp="1590046115613">
+    <state width="1238" height="284" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1590046414068" />
+    <state width="1238" height="284" key="GridCell.Tab.0.left" timestamp="1590046414067">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1238" height="284" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1590046115613" />
-    <state width="1238" height="284" key="GridCell.Tab.0.right" timestamp="1590046115614">
+    <state width="1238" height="284" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1590046414067" />
+    <state width="1238" height="284" key="GridCell.Tab.0.right" timestamp="1590046414068">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1238" height="284" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1590046115614" />
+    <state width="1238" height="284" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1590046414068" />
     <state width="1238" height="171" key="GridCell.Tab.1.bottom" timestamp="1590013970819">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -287,6 +297,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="141" y="23" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1589849370429" />
+    <state x="240" y="151" key="Vcs.Push.Dialog.v2" timestamp="1590046656938">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="240" y="151" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1590046656938" />
     <state x="8" y="74" key="new project wizard" timestamp="1589763176780">
       <screen x="0" y="23" width="1280" height="777" />
     </state>

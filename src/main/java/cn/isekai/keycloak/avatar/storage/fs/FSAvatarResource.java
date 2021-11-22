@@ -51,7 +51,7 @@ public class FSAvatarResource {
         }
 
         String filePath = String.format("%s/%s/avatar/%s", rootPath, realmName, path);
-        logger.info("Static file: " + filePath);
+        //logger.info("Static file: " + filePath);
 
         File staticFile = new File(filePath);
         if (!staticFile.exists()) {
@@ -71,14 +71,14 @@ public class FSAvatarResource {
             Date clientLastModified = DateUtils.parseDate(ifModifiedSince);
             long clientLastModifiedTime = clientLastModified.getTime() / 1000;
             long lastModifiedTime = lastModified.getTime() / 1000;
-            logger.info(String.format("clientLastModified: %d, lastModified: %d", clientLastModifiedTime, lastModifiedTime));
+            //logger.info(String.format("clientLastModified: %d, lastModified: %d", clientLastModifiedTime, lastModifiedTime));
             if (clientLastModifiedTime < lastModifiedTime) {
                 ifModified = true;
             }
         }
 
         if (ifNoneMatch != null && ifNoneMatch.equals(eTag)) {
-            logger.info(String.format("clientETag: %s, eTag: %s", ifNoneMatch, eTag));
+            //logger.info(String.format("clientETag: %s, eTag: %s", ifNoneMatch, eTag));
             ifModified = true;
         }
 

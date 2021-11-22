@@ -154,8 +154,7 @@ public class AvatarResource {
         if (isJson) {
             String avatarURL = storageProvider
                     .getAvatarURL(realmName, user.getId(), avatarId, size, false);
-            String avatarTpl = storageProvider
-                    .getAvatarURL(realmName, user.getId(), avatarId, "%s", false);
+            String avatarTpl = storageProvider.getAvatarURLTemplate(realmName, user.getId(), avatarId);
 
             if (avatarURL != null) {
                 Map<String, Object> res = new HashMap<String, Object>();

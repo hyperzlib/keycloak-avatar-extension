@@ -50,7 +50,7 @@ public class FSAvatarStorageProvider extends AvatarStorageProviderAbstract {
     public InputStream loadAvatarImage(String realmName, String userId, String avatarId, String size, boolean fallbackDefault) {
         String filePath = config.getAvatarPath(realmName, userId, avatarId, size);
         File avatarFile = new File(filePath);
-        logger.info("load avatar: " + filePath);
+        //logger.info("load avatar: " + filePath);
         if(avatarFile.exists()){
             try {
                 return new FileInputStream(avatarFile);
@@ -60,7 +60,7 @@ public class FSAvatarStorageProvider extends AvatarStorageProviderAbstract {
         } else if(fallbackDefault) {
             //返回默认头像
             filePath = config.getDefaultAvatarPath(realmName, size);
-            logger.info("load default avatar: " + filePath);
+            //logger.info("load default avatar: " + filePath);
             avatarFile = new File(filePath);
             if(avatarFile.exists()){
                 try {
@@ -76,8 +76,13 @@ public class FSAvatarStorageProvider extends AvatarStorageProviderAbstract {
     @Override
     public String getAvatarURL(String realmName, String userId, String avatarId, String size, boolean fallbackDefault){
         String filePath = config.getAvatarPath(realmName, userId, avatarId, size);
+
+        if ("%s".equals(size) && !fallbackDefault) { // return template
+            return filePath;
+        }
+
         File avatarFile = new File(filePath);
-        logger.info("load avatar: " + filePath);
+        //logger.info("load avatar: " + filePath);
         if(avatarFile.exists()){
             return config.getAvatarURL(realmName, userId, avatarId, size);
         } else if(fallbackDefault) {
@@ -89,6 +94,11 @@ public class FSAvatarStorageProvider extends AvatarStorageProviderAbstract {
             }
         }
         return null;
+    }
+
+    @Override
+    public String getAvatarURLTemplate(String realmName, String userId, String avatarId) {
+        return config.getAvatarURL(realmName, userId, avatarId, "%s");
     }
 
     @Override

@@ -19,6 +19,8 @@ public interface AvatarStorageProvider extends Provider {
 
     String getAvatarURL(String realmName, String userId, String avatarId, String size, boolean fallbackDefault);
 
+    String getAvatarURLTemplate(String realmName, String userId, String avatarId);
+
     boolean removeAvatar(String realmName, String userId, String avatarId, Iterable<String> sizeList);
 
     Object getResource();

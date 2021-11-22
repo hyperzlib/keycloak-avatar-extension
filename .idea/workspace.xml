@@ -1,14 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
       <artifact name="avatar-extension" />
     </artifacts-to-build>
   </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="ca0a78cf-d859-4a23-b687-f494d7a816f4" name="Default Changelist" comment="add README.md">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/isekai/keycloak/avatar/jpa/UserAvatarEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/isekai/keycloak/avatar/jpa/UserAvatarJpaEntityProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/isekai/keycloak/avatar/jpa/UserAvatarJpaEntityProviderFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/isekai/keycloak/avatar/protocol/oidc/mappers/AvatarMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/isekai/keycloak/avatar/spi/ConfigService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/isekai/keycloak/avatar/spi/ConfigServiceProviderFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/isekai/keycloak/avatar/spi/ConfigServiceSpi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/isekai/keycloak/avatar/spi/impl/ConfigServiceProviderFactoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/isekai/keycloak/avatar/storage/AvatarCropParams.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/isekai/keycloak/avatar/storage/AvatarStorageProviderAbstract.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/isekai/keycloak/avatar/storage/fs/FSAvatarResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/isekai/keycloak/avatar/storage/fs/FSAvatarStorageConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/isekai/keycloak/avatar/storage/fs/FSAvatarStorageProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/isekai/keycloak/avatar/storage/fs/FSAvatarStorageProviderFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/isekai/keycloak/avatar/utils/ResUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/beans.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/changelog/user-avatar-changelog-1.0-clean.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/changelog/user-avatar-changelog-1.0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/changelog/user-avatar-changelog.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/orm.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/services/cn.isekai.keycloak.avatar.spi.ConfigServiceProviderFactory" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/services/org.keycloak.connections.jpa.entityprovider.JpaEntityProviderFactory" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/services/org.keycloak.protocol.ProtocolMapper" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mai1015/keycloak/avatar/rest/AvatarResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mai1015/keycloak/avatar/rest/AvatarResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mai1015/keycloak/avatar/rest/AvatarConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mai1015/keycloak/avatar/rest/AvatarResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/isekai/keycloak/avatar/rest/AvatarResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mai1015/keycloak/avatar/rest/AvatarResourceProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/isekai/keycloak/avatar/rest/AvatarResourceProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mai1015/keycloak/avatar/rest/AvatarResourceProviderFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/isekai/keycloak/avatar/rest/AvatarResourceProviderFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mai1015/keycloak/avatar/storage/AvatarStorageProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/isekai/keycloak/avatar/storage/AvatarStorageProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mai1015/keycloak/avatar/storage/AvatarStorageProviderFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/isekai/keycloak/avatar/storage/AvatarStorageProviderFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mai1015/keycloak/avatar/storage/AvatarStorageProviderSpi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/isekai/keycloak/avatar/storage/AvatarStorageProviderSpi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mai1015/keycloak/avatar/storage/minio/MinioAvatarStorageProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mai1015/keycloak/avatar/storage/minio/MinioAvatarStorageProviderFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mai1015/keycloak/avatar/storage/minio/MinioCallback.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mai1015/keycloak/avatar/storage/minio/MinioConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mai1015/keycloak/avatar/storage/minio/MinioTemplate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/jboss-deployment-structure.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/keycloak-themes.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/services/com.mai1015.keycloak.avatar.storage.AvatarStorageProviderFactory" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/services/cn.isekai.keycloak.avatar.storage.AvatarStorageProviderFactory" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/services/org.keycloak.provider.Spi" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/services/org.keycloak.provider.Spi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/services/org.keycloak.services.resource.RealmResourceProviderFactory" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/services/org.keycloak.services.resource.RealmResourceProviderFactory" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/theme/account-avatar/account/account.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/theme/account-avatar/account/messages/messages_de.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/theme/account-avatar/account/messages/messages_en.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/theme/account-avatar/account/theme.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/theme/account-avatar/admin/resources/js/user-avatar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/theme/account-avatar/admin/resources/partials/user-detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/theme/account-avatar/admin/theme.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/theme/account-avatar/common/resources/lib/cropper/cropper.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/theme/account-avatar/common/resources/lib/cropper/cropper.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/theme/account-avatar/common/resources/lib/croppie/croppie.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/theme/account-avatar/common/resources/lib/croppie/croppie.min.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +94,39 @@
       </list>
     </option>
   </component>
+  <component name="GOROOT" path="C:/Program Files/Go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="JPA Inspector" value="true" />
+        <entry key="JPA Palette" value="true" />
+        <entry key="JPA Structure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="JPA Inspector" value="false" />
+        <entry key="JPA Palette" value="false" />
+        <entry key="JPA Structure" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="JupyterTrust" id="c207de4b-e5d1-4406-a324-2a00a23feee3" />
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../../Software/Build/apache-maven-3.6.3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="2" />
   </component>
   <component name="ProjectId" id="1c3cRqhZGOiebTsAGhVaYRaTHD7" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -41,8 +138,14 @@
     <property name="GO_FMT" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="go.formatter.settings.were.checked" value="true" />
     <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="ignore_missing_gitignore" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/META-INF" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -53,21 +156,40 @@
     <property name="nodejs.protractor.protractor_package" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="工件" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Sources\keycloak-avatar-extension\src\main\resources\META-INF" />
+      <recent name="D:\Sources\keycloak-avatar-extension\src\main\resources\META-INF\changelog" />
+      <recent name="D:\Sources\keycloak-avatar-extension\src\main\resources\META-INF\services" />
+      <recent name="D:\Sources\keycloak-avatar-extension\src\main\java\cn\isekai\keycloak\avatar\spi" />
       <recent name="$PROJECT_DIR$/src/main/resources/META-INF" />
-      <recent name="$PROJECT_DIR$/src/main/resources" />
-      <recent name="$PROJECT_DIR$/src/main/java/com/mai1015/keycloak/avatar/rest" />
-      <recent name="$PROJECT_DIR$/src/main/java" />
-      <recent name="$PROJECT_DIR$/src/main/java/com/mai1015/keycloak/avatar/storage" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.isekai.keycloak.avatar.rest" />
+      <recent name="cn.isekai.keycloak.avatar.jpa" />
+      <recent name="cn.isekai.keycloak.avatar.spi.impl" />
     </key>
   </component>
   <component name="RunManager" selected="Maven.avatar-extension [clean,package]">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="JBoss 19.1.0.Final" type="JBossConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="JBoss 19.1.0.Final" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="OPEN_IN_BROWSER" value="false" />
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -165,10 +287,11 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="JBoss Server.JBoss 19.1.0.Final" />
+      <item itemvalue="JBoss/WildFly 服务器.JBoss 19.1.0.Final" />
       <item itemvalue="Maven.avatar-extension [clean,package]" />
     </list>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -186,6 +309,19 @@
       <workItem from="1589884909340" duration="25735000" />
       <workItem from="1589960126307" duration="193000" />
       <workItem from="1589994789945" duration="11484000" />
+      <workItem from="1614689868770" duration="609000" />
+      <workItem from="1615169242252" duration="5492000" />
+      <workItem from="1615187273434" duration="18000" />
+      <workItem from="1615280876172" duration="4495000" />
+      <workItem from="1619147731791" duration="1415000" />
+      <workItem from="1623314135616" duration="4147000" />
+      <workItem from="1623318480373" duration="613000" />
+      <workItem from="1623329273186" duration="5833000" />
+      <workItem from="1626415167339" duration="477000" />
+      <workItem from="1626415672853" duration="4471000" />
+      <workItem from="1636860199287" duration="19160000" />
+      <workItem from="1637241154547" duration="16560000" />
+      <workItem from="1637414816969" duration="26291000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1589948568683</created>
@@ -226,7 +362,19 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
@@ -240,101 +388,7 @@
     <option name="LAST_COMMIT_MESSAGE" value="use constant" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="422" y="310" key="#JBoss_Server" timestamp="1589849486093">
-      <screen x="0" y="23" width="1280" height="777" />
-    </state>
-    <state x="422" y="310" key="#JBoss_Server/0.23.1280.777@0.23.1280.777" timestamp="1589849486093" />
-    <state x="128" y="23" key="#Project_Structure" timestamp="1589848981198">
-      <screen x="0" y="23" width="1280" height="777" />
-    </state>
-    <state x="128" y="23" key="#Project_Structure/0.23.1280.777@0.23.1280.777" timestamp="1589848981198" />
-    <state x="532" y="163" key="#Schemas_and_DTDs" timestamp="1589849445323">
-      <screen x="0" y="23" width="1280" height="777" />
-    </state>
-    <state x="532" y="163" key="#Schemas_and_DTDs/0.23.1280.777@0.23.1280.777" timestamp="1589849445323" />
-    <state x="104" y="73" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589926383692">
-      <screen x="0" y="23" width="1280" height="777" />
-    </state>
-    <state x="104" y="73" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1280.777@0.23.1280.777" timestamp="1589926383692" />
-    <state x="453" y="125" key="#com.intellij.ide.util.MemberChooser" timestamp="1589947878005">
-      <screen x="0" y="23" width="1280" height="777" />
-    </state>
-    <state x="453" y="125" key="#com.intellij.ide.util.MemberChooser/0.23.1280.777@0.23.1280.777" timestamp="1589947878005" />
-    <state x="359" y="23" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1589849489245">
-      <screen x="0" y="23" width="1280" height="777" />
-    </state>
-    <state x="359" y="23" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.23.1280.777@0.23.1280.777" timestamp="1589849489245" />
-    <state x="143" y="23" key="CommitChangelistDialog2" timestamp="1590054955943">
-      <screen x="0" y="23" width="1280" height="777" />
-    </state>
-    <state x="143" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1590054955943" />
-    <state width="977" height="494" key="DebuggerActiveHint" timestamp="1590005367918">
-      <screen x="0" y="23" width="1280" height="777" />
-    </state>
-    <state width="977" height="494" key="DebuggerActiveHint/0.23.1280.777@0.23.1280.777" timestamp="1590005367918" />
-    <state x="100" y="123" width="1080" height="577" key="DiffContextDialog" timestamp="1589914641824">
-      <screen x="0" y="23" width="1280" height="777" />
-    </state>
-    <state x="100" y="123" width="1080" height="577" key="DiffContextDialog/0.23.1280.777@0.23.1280.777" timestamp="1589914641824" />
-    <state width="1238" height="284" key="GridCell.Tab.0.bottom" timestamp="1590058342273">
-      <screen x="0" y="23" width="1280" height="777" />
-    </state>
-    <state width="1238" height="284" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1590058342273" />
-    <state width="1238" height="284" key="GridCell.Tab.0.center" timestamp="1590058342251">
-      <screen x="0" y="23" width="1280" height="777" />
-    </state>
-    <state width="1238" height="284" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1590058342251" />
-    <state width="1238" height="284" key="GridCell.Tab.0.left" timestamp="1590058342241">
-      <screen x="0" y="23" width="1280" height="777" />
-    </state>
-    <state width="1238" height="284" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1590058342241" />
-    <state width="1238" height="284" key="GridCell.Tab.0.right" timestamp="1590058342268">
-      <screen x="0" y="23" width="1280" height="777" />
-    </state>
-    <state width="1238" height="284" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1590058342268" />
-    <state width="1238" height="171" key="GridCell.Tab.1.bottom" timestamp="1590056540167">
-      <screen x="0" y="23" width="1280" height="777" />
-    </state>
-    <state width="1238" height="171" key="GridCell.Tab.1.bottom/0.23.1280.777@0.23.1280.777" timestamp="1590056540167" />
-    <state width="1238" height="171" key="GridCell.Tab.1.center" timestamp="1590056540165">
-      <screen x="0" y="23" width="1280" height="777" />
-    </state>
-    <state width="1238" height="171" key="GridCell.Tab.1.center/0.23.1280.777@0.23.1280.777" timestamp="1590056540165" />
-    <state width="1238" height="171" key="GridCell.Tab.1.left" timestamp="1590056540164">
-      <screen x="0" y="23" width="1280" height="777" />
-    </state>
-    <state width="1238" height="171" key="GridCell.Tab.1.left/0.23.1280.777@0.23.1280.777" timestamp="1590056540164" />
-    <state width="1238" height="171" key="GridCell.Tab.1.right" timestamp="1590056540166">
-      <screen x="0" y="23" width="1280" height="777" />
-    </state>
-    <state width="1238" height="171" key="GridCell.Tab.1.right/0.23.1280.777@0.23.1280.777" timestamp="1590056540166" />
-    <state x="141" y="23" key="SettingsEditor" timestamp="1589849370429">
-      <screen x="0" y="23" width="1280" height="777" />
-    </state>
-    <state x="141" y="23" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1589849370429" />
-    <state x="240" y="151" key="Vcs.Push.Dialog.v2" timestamp="1590047798468">
-      <screen x="0" y="23" width="1280" height="777" />
-    </state>
-    <state x="240" y="151" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1590047798468" />
-    <state x="8" y="74" key="new project wizard" timestamp="1589763176780">
-      <screen x="0" y="23" width="1280" height="777" />
-    </state>
-    <state x="8" y="74" key="new project wizard/0.23.1280.777@0.23.1280.777" timestamp="1589763176780" />
-    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1589933362707">
-      <screen x="0" y="23" width="1280" height="777" />
-    </state>
-    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.23.1280.777@0.23.1280.777" timestamp="1589933362707" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mai1015/keycloak/avatar/rest/AvatarResource.java</url>
-          <line>160</line>
-          <option name="timeStamp" value="47" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
   </component>
 </project>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+  <changeSet author="hyperzlib" id="user-avatar-1.0">
+    <preConditions onSqlOutput="TEST" onFail="MARK_RAN">
+      <not>
+        <changeSetExecuted id="user-avatar-1.0" author="hyperzlib" changeLogFile="META-INF/changelog/user-avatar-changelog-1.0.xml"/>
+      </not>
+    </preConditions>
+    <createTable tableName="USER_AVATAR">
+      <column name="USER_ID" type="VARCHAR(36)">
+        <constraints nullable="false"/>
+      </column>
+      <column name="AVATAR_ID" type="VARCHAR(48)">
+        <constraints nullable="false"/>
+      </column>
+      <column name="UPDATE_AT" type="DATETIME">
+        <constraints nullable="false"/>
+      </column>
+      <column name="STORAGE" type="VARCHAR(20)">
+        <constraints nullable="false"/>
+      </column>
+      <column name="FALLBACK_URL" type="varchar(1000)">
+        <constraints nullable="true"/>
+      </column>
+      <column name="E_TAG" type="varchar(48)">
+        <constraints nullable="true"/>
+      </column>
+    </createTable>
+
+    <addPrimaryKey columnNames="USER_ID" constraintName="PK_USER_AVATAR_USER_ID" tableName="USER_AVATAR" />
+
+    <createIndex indexName="IDX_USER_AVATAR_AVATAR_ID" tableName="USER_AVATAR">
+      <column name="AVATAR_ID" type="VARCHAR(48)"/>
+    </createIndex>
+
+  </changeSet>
+</databaseChangeLog>

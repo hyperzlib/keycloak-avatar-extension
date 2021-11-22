@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+  <changeSet author="hyperzlib" id="user-avatar-1.0-clean">
+    <preConditions onSqlOutput="TEST" onFail="MARK_RAN">
+      <not>
+        <changeSetExecuted id="user-avatar-1.0" author="hyperzlib" changeLogFile="META-INF/changelog/user-avatar-changelog-1.0.xml"/>
+      </not>
+      <tableExists tableName="USER_AVATAR" />
+    </preConditions>
+    <dropTable tableName="USER_AVATAR" />
+  </changeSet>
+</databaseChangeLog>

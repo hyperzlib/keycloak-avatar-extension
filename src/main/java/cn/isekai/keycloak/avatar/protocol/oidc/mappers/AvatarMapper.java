@@ -22,8 +22,7 @@ public class AvatarMapper extends AbstractOIDCProtocolMapper implements OIDCAcce
     private static final List<ProviderConfigProperty> configProperties = new ArrayList<>();
 
     static {
-        OIDCAttributeMapperHelper.addIncludeInTokensConfig(configProperties, org.keycloak.protocol.oidc.mappers.FullNameMapper.class);
-
+        OIDCAttributeMapperHelper.addIncludeInTokensConfig(configProperties, AvatarMapper.class);
     }
 
     public static final String PROVIDER_ID = "oidc-avatar-mapper";
@@ -103,7 +102,7 @@ public class AvatarMapper extends AbstractOIDCProtocolMapper implements OIDCAcce
         }
     }
 
-    public static ProtocolMapperModel create(String name, boolean accessToken, boolean idToken, boolean userInfo) {
+    public static ProtocolMapperModel createClaimMapper(String name, boolean accessToken, boolean idToken, boolean userInfo) {
         ProtocolMapperModel mapper = new ProtocolMapperModel();
         mapper.setName(name);
         mapper.setProtocolMapper(PROVIDER_ID);

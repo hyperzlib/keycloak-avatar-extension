@@ -13,68 +13,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca0a78cf-d859-4a23-b687-f494d7a816f4" name="Default Changelist" comment="add README.md">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/isekai/keycloak/avatar/jpa/UserAvatarEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/isekai/keycloak/avatar/jpa/UserAvatarJpaEntityProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/isekai/keycloak/avatar/jpa/UserAvatarJpaEntityProviderFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/isekai/keycloak/avatar/protocol/oidc/mappers/AvatarMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/isekai/keycloak/avatar/spi/ConfigService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/isekai/keycloak/avatar/spi/ConfigServiceProviderFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/isekai/keycloak/avatar/spi/ConfigServiceSpi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/isekai/keycloak/avatar/spi/impl/ConfigServiceProviderFactoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/isekai/keycloak/avatar/storage/AvatarCropParams.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/isekai/keycloak/avatar/storage/AvatarStorageProviderAbstract.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/isekai/keycloak/avatar/storage/fs/FSAvatarResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/isekai/keycloak/avatar/storage/fs/FSAvatarStorageConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/isekai/keycloak/avatar/storage/fs/FSAvatarStorageProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/isekai/keycloak/avatar/storage/fs/FSAvatarStorageProviderFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/isekai/keycloak/avatar/utils/ResUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/beans.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/changelog/user-avatar-changelog-1.0-clean.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/changelog/user-avatar-changelog-1.0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/changelog/user-avatar-changelog.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/orm.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/services/cn.isekai.keycloak.avatar.spi.ConfigServiceProviderFactory" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/services/org.keycloak.connections.jpa.entityprovider.JpaEntityProviderFactory" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/services/org.keycloak.protocol.ProtocolMapper" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mai1015/keycloak/avatar/rest/AvatarConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mai1015/keycloak/avatar/rest/AvatarResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/isekai/keycloak/avatar/rest/AvatarResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mai1015/keycloak/avatar/rest/AvatarResourceProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/isekai/keycloak/avatar/rest/AvatarResourceProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mai1015/keycloak/avatar/rest/AvatarResourceProviderFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/isekai/keycloak/avatar/rest/AvatarResourceProviderFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mai1015/keycloak/avatar/storage/AvatarStorageProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/isekai/keycloak/avatar/storage/AvatarStorageProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mai1015/keycloak/avatar/storage/AvatarStorageProviderFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/isekai/keycloak/avatar/storage/AvatarStorageProviderFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mai1015/keycloak/avatar/storage/AvatarStorageProviderSpi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/isekai/keycloak/avatar/storage/AvatarStorageProviderSpi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mai1015/keycloak/avatar/storage/minio/MinioAvatarStorageProvider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mai1015/keycloak/avatar/storage/minio/MinioAvatarStorageProviderFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mai1015/keycloak/avatar/storage/minio/MinioCallback.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mai1015/keycloak/avatar/storage/minio/MinioConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mai1015/keycloak/avatar/storage/minio/MinioTemplate.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/jboss-deployment-structure.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/keycloak-themes.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/services/com.mai1015.keycloak.avatar.storage.AvatarStorageProviderFactory" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/services/cn.isekai.keycloak.avatar.storage.AvatarStorageProviderFactory" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/services/org.keycloak.provider.Spi" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/services/org.keycloak.provider.Spi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/services/org.keycloak.services.resource.RealmResourceProviderFactory" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/services/org.keycloak.services.resource.RealmResourceProviderFactory" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/theme/account-avatar/account/account.ftl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/theme/account-avatar/account/messages/messages_de.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/theme/account-avatar/account/messages/messages_en.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/theme/account-avatar/account/theme.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/theme/account-avatar/admin/resources/js/user-avatar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/theme/account-avatar/admin/resources/partials/user-detail.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/theme/account-avatar/admin/theme.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/theme/account-avatar/common/resources/lib/cropper/cropper.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/theme/account-avatar/common/resources/lib/cropper/cropper.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/theme/account-avatar/common/resources/lib/croppie/croppie.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/theme/account-avatar/common/resources/lib/croppie/croppie.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/isekai/keycloak/avatar/protocol/oidc/mappers/AvatarMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/isekai/keycloak/avatar/protocol/oidc/mappers/AvatarMapper.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -321,7 +262,11 @@
       <workItem from="1626415672853" duration="4471000" />
       <workItem from="1636860199287" duration="19160000" />
       <workItem from="1637241154547" duration="16560000" />
-      <workItem from="1637414816969" duration="26291000" />
+      <workItem from="1637414816969" duration="30062000" />
+      <workItem from="1637590190995" duration="1291000" />
+      <workItem from="1637760862161" duration="4292000" />
+      <workItem from="1638416077438" duration="593000" />
+      <workItem from="1638537367812" duration="113000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1589948568683</created>

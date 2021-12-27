@@ -1,4 +1,4 @@
-.idea
-.settings
-target
-src-bak
+.idea/
+.settings/
+target/
+src-bak/

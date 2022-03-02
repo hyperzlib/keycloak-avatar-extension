@@ -251,8 +251,8 @@ public class AvatarResource {
                                             @QueryParam("format") String format) {
         UserModel user = session.users().getUserByUsername(session.getContext().getRealm(), userName);
         boolean isJson = "json".equals(format);
-        if (user == null) {
-            return responseNotFound(isJson);
+        if (isJson && user == null) {
+            return responseNotFound(true);
         }
         return getUserAvatar(user, size, isJson);
     }
@@ -288,8 +288,8 @@ public class AvatarResource {
                                       @QueryParam("format") String format) {
         boolean isJson = "json".equals(format);
         UserModel user = session.users().getUserById(session.getContext().getRealm(), userId);
-        if (user == null) {
-            return responseNotFound(isJson);
+        if (isJson && user == null) {
+            return responseNotFound(true);
         }
         return getUserAvatar(user, size, isJson);
     }
@@ -430,7 +430,7 @@ public class AvatarResource {
                             loadAvatarImage(realmName, "", "", size, true);
                     return Response.ok(stream).type("image/png").build();
                 } catch (Exception e) {
-                    logger.error("Get avater error", e);
+                    logger.error("Get avatar error", e);
                 }
             }
         }

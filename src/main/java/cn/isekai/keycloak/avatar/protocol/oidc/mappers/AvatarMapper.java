@@ -97,7 +97,7 @@ public class AvatarMapper extends AbstractOIDCProtocolMapper implements OIDCAcce
                     String size = String.format("%dpx", ConfigService.sizeList.get(sizeName));
                     avatarSet.put(size, avatar);
                 }
-                token.getOtherClaims().put("avatarSet", avatarSet);
+                token.getOtherClaims().put("avatar_set", avatarSet);
             }
         }
     }

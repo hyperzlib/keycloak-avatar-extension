@@ -6,7 +6,6 @@
     <preConditions onSqlOutput="TEST" onFail="MARK_RAN">
       <not>
         <changeSetExecuted id="user-avatar-1.1" author="hyperzlib" changeLogFile="META-INF/changelog/user-avatar-changelog-1.1.xml"/>
-        <columnExists tableName="USER_AVATAR" columnName="UPDATE_AT"/>
       </not>
     </preConditions>
     

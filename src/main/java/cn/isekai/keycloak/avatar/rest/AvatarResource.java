@@ -218,7 +218,7 @@ public class AvatarResource {
             UserAvatarEntity userAvatar = new UserAvatarEntity();
             userAvatar.setUserId(userId);
             userAvatar.setAvatarId(avatarId);
-            userAvatar.setUpdateAt(modifiedTime.getTime());
+            userAvatar.setUpdatedTime(modifiedTime.getTime());
             userAvatar.setStorage(config.getStorageServiceName());
             userAvatar.setETag(eTag);
             userAvatar.setFallbackURL(avatarUrl);
@@ -456,10 +456,11 @@ public class AvatarResource {
         return !realmAuth.users().canManage();
     }
 
-    @Path("")
+    @Path("/res")
     public Object getProviderResource() {
         AvatarStorageProvider sp = getAvatarStorageProvider();
         if (sp == null) {
+            logger.warn("Cannot get avatar storage provider");
             return responseNotFound(false);
         }
 

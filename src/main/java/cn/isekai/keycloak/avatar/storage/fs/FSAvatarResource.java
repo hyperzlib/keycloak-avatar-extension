@@ -15,7 +15,7 @@ import org.keycloak.models.KeycloakSession;
 import java.io.File;
 import java.util.Date;
 
-@Path("/avatar-file")
+@Path("")
 public class FSAvatarResource {
     private static final Logger logger = Logger.getLogger(FSAvatarResource.class);
 
@@ -37,21 +37,21 @@ public class FSAvatarResource {
         this.fsConfig = fsProvider.getConfig();
 
         DEFAULT_SIZE = config.getDefaultSize();
+
+        logger.info("FSAvatarResource initialized.");
     }
 
+    @Path("{avatar_id}/avatar-{size}.png")
     @GET
-    @Path("/{path:.*\\.png$}")
-    public Response getUserAvatarStaticById(@PathParam("path") String path,
+    public Response getUserAvatarStaticById(@PathParam("avatar_id") String avatarId,
+                                            @PathParam("size") String size,
                                             @HeaderParam("if-none-match") String ifNoneMatch,
                                             @HeaderParam("if-modified-since") String ifModifiedSince) {
+        logger.infof("Get static avatar file: %s/avatar-%s.png", avatarId, size);
         String realmName = session.getContext().getRealm().getName();
-        String rootPath = fsConfig.getStorageRoot();
-        if ("/".equals(rootPath.substring(rootPath.length() - 1))) {
-            rootPath = rootPath.substring(0, rootPath.length() - 1);
-        }
 
-        String filePath = String.format("%s/%s/avatar/%s", rootPath, realmName, path);
-        //logger.info("Static file: " + filePath);
+        String filePath = fsConfig.getAvatarPath(realmName, "", avatarId, size);
+        logger.info("Static file: " + filePath);
 
         File staticFile = new File(filePath);
         if (!staticFile.exists()) {
@@ -88,7 +88,6 @@ public class FSAvatarResource {
 
         // deal with cache
         if (!ifModified) {
-
             return Response
                     .status(Response.Status.NOT_MODIFIED)
                     .type("image/png")

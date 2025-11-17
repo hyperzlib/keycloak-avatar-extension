@@ -12,19 +12,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca0a78cf-d859-4a23-b687-f494d7a816f4" name="Default Changelist" comment="add README.md">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/changelog/user-avatar-changelog-1.1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="ca0a78cf-d859-4a23-b687-f494d7a816f4" name="Default Changelist" comment="add supports for Keycloak 26.4.0">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/isekai/keycloak/avatar/jpa/UserAvatarEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/isekai/keycloak/avatar/jpa/UserAvatarEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/isekai/keycloak/avatar/jpa/UserAvatarJpaEntityProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/isekai/keycloak/avatar/jpa/UserAvatarJpaEntityProvider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/isekai/keycloak/avatar/rest/AvatarResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/isekai/keycloak/avatar/rest/AvatarResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/isekai/keycloak/avatar/storage/AvatarCropParams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/isekai/keycloak/avatar/storage/AvatarCropParams.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/isekai/keycloak/avatar/storage/fs/FSAvatarResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/isekai/keycloak/avatar/storage/fs/FSAvatarResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/isekai/keycloak/avatar/utils/ResUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/isekai/keycloak/avatar/utils/ResUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/changelog/user-avatar-changelog.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/changelog/user-avatar-changelog.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/isekai/keycloak/avatar/storage/fs/FSAvatarStorageConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/isekai/keycloak/avatar/storage/fs/FSAvatarStorageConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/changelog/user-avatar-changelog-1.1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/changelog/user-avatar-changelog-1.1.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,34 +90,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Maven.avatar-extension [clean,package].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Projects/keycloak-avatar-extension/src/main/resources/META-INF/changelog&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;项目&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;aCheck Deprecated&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven.avatar-extension [clean,package].executor": "Run",
+    "Maven.avatar-extension [package].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Projects/keycloak-avatar-extension/src/main/resources/META-INF/changelog",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "项目",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "aCheck Deprecated",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Projects\keycloak-avatar-extension\src\main\resources\META-INF\changelog" />
@@ -138,7 +133,7 @@
       <recent name="cn.isekai.keycloak.avatar.spi.impl" />
     </key>
   </component>
-  <component name="RunManager" selected="Maven.avatar-extension [clean,package]">
+  <component name="RunManager" selected="Maven.avatar-extension [package]">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -222,7 +217,7 @@
         <option name="BuildArtifacts" enabled="false" />
       </method>
     </configuration>
-    <configuration name="avatar-extension [clean,package]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+    <configuration name="avatar-extension [package]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
       <MavenSettings>
         <option name="myGeneralSettings" />
         <option name="myRunnerSettings" />
@@ -234,7 +229,6 @@
             </option>
             <option name="goals">
               <list>
-                <option value="clean" />
                 <option value="package" />
               </list>
             </option>
@@ -255,7 +249,7 @@
     </configuration>
     <list>
       <item itemvalue="JBoss/WildFly 服务器.JBoss 19.1.0.Final" />
-      <item itemvalue="Maven.avatar-extension [clean,package]" />
+      <item itemvalue="Maven.avatar-extension [package]" />
     </list>
   </component>
   <component name="SharedIndexes">
@@ -304,7 +298,8 @@
       <workItem from="1668990032740" duration="677000" />
       <workItem from="1763374687335" duration="1789000" />
       <workItem from="1763376508897" duration="1678000" />
-      <workItem from="1763378209959" duration="973000" />
+      <workItem from="1763378209959" duration="2073000" />
+      <workItem from="1763399315013" duration="6532000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1589948568683</created>
@@ -341,7 +336,15 @@
       <option name="project" value="LOCAL" />
       <updated>1590054956240</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add supports for Keycloak 26.4.0">
+      <option name="closed" value="true" />
+      <created>1763379287043</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1763379287043</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -359,6 +362,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
@@ -367,7 +371,8 @@
     <MESSAGE value="remove dependency" />
     <MESSAGE value="add README.md" />
     <MESSAGE value="use constant" />
-    <option name="LAST_COMMIT_MESSAGE" value="use constant" />
+    <MESSAGE value="add supports for Keycloak 26.4.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="add supports for Keycloak 26.4.0" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="VgoProject">

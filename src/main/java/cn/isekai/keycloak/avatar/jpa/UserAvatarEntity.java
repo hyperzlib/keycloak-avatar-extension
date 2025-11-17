@@ -30,8 +30,8 @@ public class UserAvatarEntity {
     @Column(name = "AVATAR_ID")
     private String avatarId;
 
-    @Column(name = "UPDATE_AT", nullable = false)
-    private long updateAt;
+    @Column(name = "UPDATED_TIME", nullable = false)
+    private long updatedTime;
 
     @Column(name = "STORAGE")
     private String storage;

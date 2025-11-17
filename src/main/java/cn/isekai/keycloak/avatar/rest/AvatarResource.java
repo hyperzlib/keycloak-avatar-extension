@@ -5,32 +5,32 @@ import cn.isekai.keycloak.avatar.spi.ConfigService;
 import cn.isekai.keycloak.avatar.storage.AvatarCropParams;
 import cn.isekai.keycloak.avatar.storage.AvatarStorageProvider;
 import cn.isekai.keycloak.avatar.utils.ResUtils;
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import jakarta.ws.rs.*;
+import jakarta.ws.rs.core.Context;
+import jakarta.ws.rs.core.MediaType;
+import jakarta.ws.rs.core.Response;
+import jakarta.ws.rs.core.UriInfo;
 import org.jboss.logging.Logger;
-import org.jboss.resteasy.annotations.cache.Cache;
-import org.jboss.resteasy.annotations.cache.NoCache;
-import org.jboss.resteasy.plugins.providers.multipart.MultipartFormDataInput;
+import org.jboss.resteasy.reactive.Cache;
+import org.jboss.resteasy.reactive.NoCache;
+import org.jboss.resteasy.reactive.RestForm;
+import org.jboss.resteasy.reactive.multipart.FileUpload;
 import org.keycloak.models.KeycloakSession;
 import org.keycloak.models.RealmModel;
 import org.keycloak.models.UserModel;
 import org.keycloak.services.managers.AppAuthManager;
 import org.keycloak.services.managers.AuthenticationManager;
 import org.keycloak.services.resources.admin.AdminAuth;
-import org.keycloak.services.resources.admin.permissions.AdminPermissionEvaluator;
-import org.keycloak.services.resources.admin.permissions.AdminPermissions;
+import org.keycloak.services.resources.admin.fgap.AdminPermissionEvaluator;
+import org.keycloak.services.resources.admin.fgap.AdminPermissions;
 
 import javax.imageio.ImageIO;
-import javax.ws.rs.*;
-import javax.ws.rs.core.Context;
-import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.Response;
-import javax.ws.rs.core.UriInfo;
 import java.awt.image.BufferedImage;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.nio.file.Files;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
@@ -192,7 +192,7 @@ public class AvatarResource {
         return responseNotFound(isJson);
     }
 
-    public Response uploadUserAvatar(UserModel user, MultipartFormDataInput input) {
+    public Response uploadUserAvatar(UserModel user, String avatarCropParam, FileUpload imageFile) {
         if (user == null) return Response.status(404).build();
         String realmId = session.getContext().getRealm().getId();
         String realmName = session.getContext().getRealm().getName();
@@ -200,11 +200,10 @@ public class AvatarResource {
 
         String avatarId = generateAvatarId(realmId, userId);
         try {
-            String cropParamStr = input.getFormDataPart(AVATAR_CROP_PARAMETER, String.class, null);
             AvatarCropParams cropParams = null;
-            if(cropParamStr != null) cropParams = new AvatarCropParams(cropParamStr);
+            if(avatarCropParam != null) cropParams = new AvatarCropParams(avatarCropParam);
 
-            InputStream imageInputStream = input.getFormDataPart(AVATAR_IMAGE_PARAMETER, InputStream.class, null);
+            InputStream imageInputStream = Files.newInputStream(imageFile.uploadedFile());
             ByteArrayInputStream byteArrayIn = convertImage(imageInputStream);
 
             AvatarStorageProvider storageProvider = getAvatarStorageProvider();
@@ -219,7 +218,7 @@ public class AvatarResource {
             UserAvatarEntity userAvatar = new UserAvatarEntity();
             userAvatar.setUserId(userId);
             userAvatar.setAvatarId(avatarId);
-            userAvatar.setUpdateAt(modifiedTime);
+            userAvatar.setUpdateAt(modifiedTime.getTime());
             userAvatar.setStorage(config.getStorageServiceName());
             userAvatar.setETag(eTag);
             userAvatar.setFallbackURL(avatarUrl);
@@ -262,7 +261,9 @@ public class AvatarResource {
     @NoCache
     @Consumes(MediaType.MULTIPART_FORM_DATA)
     @Produces(MediaType.APPLICATION_JSON)
-    public Response uploadUserAvatarByUserName(@PathParam("username") String userName, MultipartFormDataInput input) {
+    public Response uploadUserAvatarByUserName(@PathParam("username") String userName,
+                                               @FormParam(AVATAR_CROP_PARAMETER) String avatarCropParam,
+                                               @RestForm(AVATAR_IMAGE_PARAMETER) FileUpload imagePart) {
         AdminAuth auth = checkAdminAuthentication(session);
         if (auth == null) {
             return responseNotAuthorized(true);
@@ -277,7 +278,7 @@ public class AvatarResource {
         if (user == null) {
             return responseNotFound(true);
         }
-        return uploadUserAvatar(user, input);
+        return uploadUserAvatar(user, avatarCropParam, imagePart);
     }
 
     @GET
@@ -299,7 +300,9 @@ public class AvatarResource {
     @NoCache
     @Consumes(MediaType.MULTIPART_FORM_DATA)
     @Produces(MediaType.APPLICATION_JSON)
-    public Response uploadUserAvatarById(@PathParam("user_id") String userId, MultipartFormDataInput input) {
+    public Response uploadUserAvatarById(@PathParam("user_id") String userId,
+                                         @FormParam(AVATAR_CROP_PARAMETER) String avatarCropParam,
+                                         @RestForm(AVATAR_IMAGE_PARAMETER) FileUpload imagePart) {
         AdminAuth auth = checkAdminAuthentication(session);
         if (auth == null) {
             return responseNotAuthorized(true);
@@ -314,7 +317,7 @@ public class AvatarResource {
         if (user == null) {
             return responseNotFound(true);
         }
-        return uploadUserAvatar(user, input);
+        return uploadUserAvatar(user, avatarCropParam, imagePart);
     }
 
     @DELETE
@@ -388,7 +391,9 @@ public class AvatarResource {
     @NoCache
     @Consumes(MediaType.MULTIPART_FORM_DATA)
     @Produces(MediaType.APPLICATION_JSON)
-    public Response uploadCurrentUserAvatarImage(MultipartFormDataInput input, @Context UriInfo uriInfo) {
+    public Response uploadCurrentUserAvatarImage(@FormParam(AVATAR_CROP_PARAMETER) String avatarCropParam,
+                                                 @RestForm(AVATAR_IMAGE_PARAMETER) FileUpload imagePart,
+                                                 @Context UriInfo uriInfo) {
         AuthenticationManager.AuthResult auth = checkUserAuthentication(session);
         if (auth == null) {
             return responseNotAuthorized(true);
@@ -399,7 +404,7 @@ public class AvatarResource {
             return responseNotFound(true);
         }
 
-        return uploadUserAvatar(user, input);
+        return uploadUserAvatar(user, avatarCropParam, imagePart);
     }
 
     @GET
@@ -437,9 +442,8 @@ public class AvatarResource {
         return responseNotFound(isJson);
     }
 
-    private boolean isValidStateChecker(MultipartFormDataInput input) {
+    private boolean isValidStateChecker(@FormParam(STATE_CHECKER_PARAMETER) String actualStateChecker) {
         try {
-            String actualStateChecker = input.getFormDataPart(STATE_CHECKER_PARAMETER, String.class, null);
             String requiredStateChecker = (String) session.getAttribute(STATE_CHECKER_ATTRIBUTE);
 
             return Objects.equals(requiredStateChecker, actualStateChecker);

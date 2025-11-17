@@ -6,15 +6,15 @@
 
     <groupId>cn.isekai.keycloak</groupId>
     <artifactId>avatar-extension</artifactId>
-    <version>1.2</version>
+    <version>1.3</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.target>1.8</maven.compiler.target>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <keycloak.version>20.0.1</keycloak.version>
+        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.source>17</maven.compiler.source>
+        <keycloak.version>26.4.5</keycloak.version>
+        <quarkus-resteasy.version>3.27.0</quarkus-resteasy.version>
         <minio.version>7.0.2</minio.version>
-        <jboss-jaxrs-api_2.1_spec>2.0.1.Final</jboss-jaxrs-api_2.1_spec>
     </properties>
 
 
@@ -59,6 +59,13 @@
             <groupId>org.keycloak</groupId>
             <artifactId>keycloak-services</artifactId>
             <version>${keycloak.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-rest</artifactId>
+            <version>${quarkus-resteasy.version}</version>
             <scope>provided</scope>
         </dependency>
 

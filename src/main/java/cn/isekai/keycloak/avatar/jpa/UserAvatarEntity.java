@@ -1,11 +1,13 @@
 package cn.isekai.keycloak.avatar.jpa;
 
-import lombok.*;
+import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.RequiredArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
 import org.keycloak.connections.jpa.JpaConnectionProvider;
 import org.keycloak.models.KeycloakSession;
 
-import javax.persistence.*;
-import java.util.Date;
 import java.util.Objects;
 
 @Getter
@@ -28,9 +30,8 @@ public class UserAvatarEntity {
     @Column(name = "AVATAR_ID")
     private String avatarId;
 
-    @Temporal(TemporalType.TIMESTAMP)
     @Column(name = "UPDATE_AT", nullable = false)
-    private Date updateAt;
+    private long updateAt;
 
     @Column(name = "STORAGE")
     private String storage;
@@ -45,8 +46,7 @@ public class UserAvatarEntity {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null) return false;
-        if (!(o instanceof UserAvatarEntity)) return false;
-        UserAvatarEntity that = (UserAvatarEntity) o;
+        if (!(o instanceof UserAvatarEntity that)) return false;
 
         return Objects.equals(userId, that.userId);
     }

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+  <changeSet author="hyperzlib" id="user-avatar-1.1">
+    <preConditions onSqlOutput="TEST" onFail="MARK_RAN">
+      <not>
+        <changeSetExecuted id="user-avatar-1.1" author="hyperzlib" changeLogFile="META-INF/changelog/user-avatar-changelog-1.1.xml"/>
+        <columnExists tableName="USER_AVATAR" columnName="UPDATE_AT"/>
+      </not>
+    </preConditions>
+    
+    <addColumn tableName="USER_AVATAR">
+      <column name="UPDATED_TIME" type="BIGINT" defaultValue="0"/>
+    </addColumn>
+
+    <dropColumn tableName="USER_AVATAR" columnName="UPDATE_AT"/>
+  </changeSet>
+</databaseChangeLog>

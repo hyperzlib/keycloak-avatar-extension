@@ -2,16 +2,16 @@ package cn.isekai.keycloak.avatar.storage.fs;
 
 import cn.isekai.keycloak.avatar.spi.ConfigService;
 import cn.isekai.keycloak.avatar.utils.ResUtils;
+import jakarta.ws.rs.GET;
+import jakarta.ws.rs.HeaderParam;
+import jakarta.ws.rs.Path;
+import jakarta.ws.rs.PathParam;
+import jakarta.ws.rs.core.CacheControl;
+import jakarta.ws.rs.core.Response;
 import org.apache.http.client.utils.DateUtils;
 import org.jboss.logging.Logger;
 import org.keycloak.models.KeycloakSession;
 
-import javax.ws.rs.GET;
-import javax.ws.rs.HeaderParam;
-import javax.ws.rs.Path;
-import javax.ws.rs.PathParam;
-import javax.ws.rs.core.CacheControl;
-import javax.ws.rs.core.Response;
 import java.io.File;
 import java.util.Date;
 

@@ -11,7 +11,7 @@ public class UserAvatarJpaEntityProvider implements JpaEntityProvider {
 
     @Override
     public List<Class<?>> getEntities() {
-        return Collections.<Class<?>>singletonList(UserAvatarEntity.class);
+        return Collections.singletonList(UserAvatarEntity.class);
     }
 
     @Override
